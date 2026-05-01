@@ -1,0 +1,10 @@
+platformName: iOS
+automationName: XCUITest
+deviceName: "iPhone 14"              # exact name from Xcode
+udid: "YOUR_DEVICE_UDID"             # from: xcrun xctrace list devices
+bundleId: "com.your.app"
+noReset: false
+autoAcceptAlerts: true
+newCommandTimeout: 300
+xcodeOrgId: "YOUR_TEAM_ID"
+xcodeSigningId: "iPhone Developer"

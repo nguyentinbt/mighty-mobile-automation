@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.12.0 on darwin)" generated="2026-05-01T00:20:20.068407" rpa="false" schemaversion="5">
+<suite id="s1" name="Mighty Android" source="/Users/tinnguyen/Workspace/WAV/Mighty/mighty-mobile-automation/tests/mighty_android.robot">
+<test id="s1-t1" name="Launch Mighty Audio App" line="13">
+<kw name="Open Application" owner="AppiumLibrary">
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=${PLATFORM}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>appPackage=${PACKAGE}</arg>
+<arg>appActivity=${ACTIVITY}</arg>
+<arg>automationName=UiAutomator2</arg>
+<arg>noReset=true</arg>
+<arg>fullReset=false</arg>
+<arg>forceAppLaunch=true</arg>
+<arg>appWaitActivity=com.mightyaudio.*</arg>
+<doc>Opens a new application to the given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.19/guides/caps/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | No     | alias             |</doc>
+<status status="PASS" start="2026-05-01T00:20:20.255704" elapsed="7.602148"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2026-05-01T00:20:30.410221" level="INFO">xpath criteria: //*</msg>
+<arg>xpath=//*</arg>
+<arg>timeout=15s</arg>
+<doc>Waits until the element specified by the ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-05-01T00:20:27.858276" elapsed="2.555792"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-01T00:20:35.415566" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-01T00:20:30.414824" elapsed="5.000935"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2026-05-01T00:20:35.416688" level="INFO">Clicking element 'xpath=//w2.d1/android.view.View/android.view.View/android.view.View/android.view.View'.</msg>
+<msg time="2026-05-01T00:20:35.676588" level="INFO">xpath criteria: //w2.d1/android.view.View/android.view.View/android.view.View/android.view.View</msg>
+<arg>xpath=//w2.d1/android.view.View/android.view.View/android.view.View/android.view.View</arg>
+<doc>Clicks the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-01T00:20:35.416118" elapsed="0.260663"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-01T00:20:40.679189" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-01T00:20:35.677213" elapsed="5.003135"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2026-05-01T00:20:40.683857" level="INFO">Clicking element 'xpath=//w2.d1/android.view.View/android.view.View/android.view.View/android.view.View[1]/android.view.View[1]/android.view.View'.</msg>
+<msg time="2026-05-01T00:20:41.076659" level="INFO">xpath criteria: //w2.d1/android.view.View/android.view.View/android.view.View/android.view.View[1]/android.view.View[1]/android.view.View</msg>
+<arg>xpath=//w2.d1/android.view.View/android.view.View/android.view.View/android.view.View[1]/android.view.View[1]/android.view.View</arg>
+<doc>Clicks the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-01T00:20:40.681477" elapsed="0.395542"/>
+</kw>
+<kw name="Close Application" owner="AppiumLibrary" type="TEARDOWN">
+<doc>Closes the current application and the webdriver session.</doc>
+<status status="PASS" start="2026-05-01T00:20:41.077917" elapsed="1.148836"/>
+</kw>
+<status status="PASS" start="2026-05-01T00:20:20.255213" elapsed="21.971794"/>
+</test>
+<status status="PASS" start="2026-05-01T00:20:20.071551" elapsed="22.155937"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Mighty Android" id="s1" pass="1" fail="0" skip="0">Mighty Android</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
