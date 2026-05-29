@@ -5,7 +5,7 @@ Test Teardown     Close Application
 *** Variables ***
 ${REMOTE_URL}     http://127.0.0.1:4723
 ${PLATFORM}       Android
-${DEVICE_NAME}    575a96d
+${DEVICE_NAME}    R7AL206HD0D
 ${PACKAGE}        mighty.audio
 ${ACTIVITY}       com.mightyaudio.messaging.MainActivity
 

@@ -1,0 +1,677 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.14.5 on darwin)" generated="2026-05-29T16:32:17.471729" rpa="false" schemaversion="5">
+<suite id="s1" name="Mighty-Mobile-Automation" source="/Users/vyphan/Workspace/mighty-mobile-automation">
+<suite id="s1-s1" name="Tests" source="/Users/vyphan/Workspace/mighty-mobile-automation/tests">
+<suite id="s1-s1-s1" name="Android" source="/Users/vyphan/Workspace/mighty-mobile-automation/tests/android">
+<suite id="s1-s1-s1-s1" name="Test Login Android" source="/Users/vyphan/Workspace/mighty-mobile-automation/tests/android/test_login_android.robot">
+<test id="s1-s1-s1-s1-t1" name="Login Fail With Invalid Username" line="15">
+<kw name="Launch Mighty Audio App" owner="BaseScreen">
+<kw name="Open Application" owner="AppiumLibrary">
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=${PLATFORM}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>appPackage=${PACKAGE}</arg>
+<arg>appActivity=${ACTIVITY}</arg>
+<arg>automationName=UiAutomator2</arg>
+<arg>noReset=true</arg>
+<arg>fullReset=false</arg>
+<arg>forceAppLaunch=true</arg>
+<arg>appWaitActivity=com.mightyaudio.*</arg>
+<doc>Opens a new application to the given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.19/guides/caps/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | No     | alias             |</doc>
+<status status="PASS" start="2026-05-29T16:32:17.597204" elapsed="4.175977"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2026-05-29T16:32:22.616979" level="INFO">xpath criteria: //*</msg>
+<arg>xpath=//*</arg>
+<arg>timeout=15s</arg>
+<doc>Waits until the element specified by the ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-05-29T16:32:21.773949" elapsed="0.843419"/>
+</kw>
+<status status="PASS" start="2026-05-29T16:32:17.596755" elapsed="5.020919"/>
+</kw>
+<kw name="Tap on Arrow button on Onboarding page" owner="LoginScreen_Android">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2026-05-29T16:32:22.619959" level="INFO">Clicking element 'xpath=//qu0/android.view.View/android.view.View/android.view.View/android.view.View'.</msg>
+<msg time="2026-05-29T16:32:23.304731" level="INFO">xpath criteria: //qu0/android.view.View/android.view.View/android.view.View/android.view.View</msg>
+<arg>${ONBOARDING_ARROW_BUTTON}</arg>
+<doc>Clicks the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-29T16:32:22.619230" elapsed="0.685894"/>
+</kw>
+<status status="PASS" start="2026-05-29T16:32:22.618411" elapsed="0.687043"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-29T16:32:25.307869" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-29T16:32:23.306066" elapsed="2.002627"/>
+</kw>
+<kw name="Tap on Arrow button on Plug in Mighty page" owner="LoginScreen_Android">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2026-05-29T16:32:25.313780" level="INFO">Clicking element 'xpath=//qu0/android.view.View/android.view.View/android.view.View/android.view.View[1]/android.view.View[1]/android.view.View'.</msg>
+<msg time="2026-05-29T16:32:25.486371" level="INFO">xpath criteria: //qu0/android.view.View/android.view.View/android.view.View/android.view.View[1]/android.view.View[1]/android.view.View</msg>
+<arg>${PLUGIN_ARROW_BUTTON}</arg>
+<doc>Clicks the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-29T16:32:25.311877" elapsed="0.174887"/>
+</kw>
+<status status="PASS" start="2026-05-29T16:32:25.310013" elapsed="0.177136"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-29T16:32:27.489324" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-29T16:32:25.487889" elapsed="2.002288"/>
+</kw>
+<kw name="Is in Sign in page" owner="LoginScreen_Android">
+<kw name="Page Should Contain Text" owner="AppiumLibrary">
+<msg time="2026-05-29T16:32:27.659485" level="INFO">Current page contains text 'Sign in to your Mighty Account'.</msg>
+<arg>${SIGNIN_TITLE}</arg>
+<doc>Verifies that the current page contains ``text``.</doc>
+<status status="PASS" start="2026-05-29T16:32:27.492707" elapsed="0.167351"/>
+</kw>
+<status status="PASS" start="2026-05-29T16:32:27.491662" elapsed="0.169597"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-29T16:32:29.667024" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-29T16:32:27.661906" elapsed="2.005720"/>
+</kw>
+<kw name="Input Username" owner="LoginScreen_Android">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2026-05-29T16:32:29.669824" level="INFO">Clicking element 'xpath=//android.widget.ScrollView/android.widget.EditText[1]'.</msg>
+<msg time="2026-05-29T16:32:29.915457" level="INFO">xpath criteria: //android.widget.ScrollView/android.widget.EditText[1]</msg>
+<arg>${USERNAME_FIELD}</arg>
+<doc>Clicks the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-29T16:32:29.669258" elapsed="0.246561"/>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2026-05-29T16:32:29.916865" level="INFO">Typing text 'plnv.2709' into text field 'xpath=//android.widget.ScrollView/android.widget.EditText[1]'</msg>
+<msg time="2026-05-29T16:32:30.992569" level="INFO">xpath criteria: //android.widget.ScrollView/android.widget.EditText[1]</msg>
+<arg>${USERNAME_FIELD}</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-29T16:32:29.916178" elapsed="1.077235"/>
+</kw>
+<arg>${INVALID_USERNAME}</arg>
+<status status="PASS" start="2026-05-29T16:32:29.668545" elapsed="1.325356"/>
+</kw>
+<kw name="Input Password" owner="LoginScreen_Android">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2026-05-29T16:32:31.071246" level="INFO">xpath criteria: //android.widget.ScrollView/android.widget.EditText[2]</msg>
+<arg>${PASSWORD_FIELD}</arg>
+<arg>timeout=5s</arg>
+<doc>Waits until the element specified by the ``locator`` is visible.</doc>
+<status status="PASS" start="2026-05-29T16:32:30.997642" elapsed="0.074170"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2026-05-29T16:32:31.073360" level="INFO">Clicking element 'xpath=//android.widget.ScrollView/android.widget.EditText[2]'.</msg>
+<msg time="2026-05-29T16:32:31.189063" level="INFO">xpath criteria: //android.widget.ScrollView/android.widget.EditText[2]</msg>
+<arg>${PASSWORD_FIELD}</arg>
+<doc>Clicks the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-29T16:32:31.072394" elapsed="0.117118"/>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2026-05-29T16:32:31.191318" level="INFO">Typing text 'Mighty@1' into text field 'xpath=//android.widget.ScrollView/android.widget.EditText[2]'</msg>
+<msg time="2026-05-29T16:32:31.904496" level="INFO">xpath criteria: //android.widget.ScrollView/android.widget.EditText[2]</msg>
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-29T16:32:31.190034" elapsed="0.714855"/>
+</kw>
+<arg>${VALID_PASSWORD}</arg>
+<status status="PASS" start="2026-05-29T16:32:30.994440" elapsed="0.910758"/>
+</kw>
+<kw name="Tap on Unhide button" owner="LoginScreen_Android">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2026-05-29T16:32:31.906879" level="INFO">Clicking element 'xpath=//android.widget.ScrollView/android.widget.EditText[2]/android.view.View/android.view.View[2]'.</msg>
+<msg time="2026-05-29T16:32:32.035464" level="INFO">xpath criteria: //android.widget.ScrollView/android.widget.EditText[2]/android.view.View/android.view.View[2]</msg>
+<arg>${UNHIDE_BUTTON}</arg>
+<doc>Clicks the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-29T16:32:31.906379" elapsed="0.129582"/>
+</kw>
+<status status="PASS" start="2026-05-29T16:32:31.905805" elapsed="0.130459"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-29T16:32:37.039954" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-29T16:32:32.036772" elapsed="5.003768"/>
+</kw>
+<kw name="Tap on Sign in button" owner="LoginScreen_Android">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2026-05-29T16:32:37.216131" level="INFO">xpath criteria: //android.widget.ScrollView/android.view.View[1]/android.widget.Button</msg>
+<arg>${SIGNIN_BUTTON}</arg>
+<arg>timeout=5s</arg>
+<doc>Waits until the element specified by the ``locator`` is visible.</doc>
+<status status="PASS" start="2026-05-29T16:32:37.042237" elapsed="0.174182"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2026-05-29T16:32:37.217409" level="INFO">Clicking element 'xpath=//android.widget.ScrollView/android.view.View[1]/android.widget.Button'.</msg>
+<msg time="2026-05-29T16:32:38.385477" level="INFO">xpath criteria: //android.widget.ScrollView/android.view.View[1]/android.widget.Button</msg>
+<arg>${SIGNIN_BUTTON}</arg>
+<doc>Clicks the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-29T16:32:37.216731" elapsed="1.169397"/>
+</kw>
+<status status="PASS" start="2026-05-29T16:32:37.041610" elapsed="1.345009"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-29T16:32:43.390728" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-29T16:32:38.387500" elapsed="5.004369"/>
+</kw>
+<kw name="Verify Error Message Displayed" owner="LoginScreen_Android">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2026-05-29T16:32:43.627949" level="INFO">xpath criteria: //android.widget.TextView[@text="Username and password do not match"]</msg>
+<arg>${MESSAGE}</arg>
+<arg>timeout=5s</arg>
+<doc>Waits until the element specified by the ``locator`` is visible.</doc>
+<status status="PASS" start="2026-05-29T16:32:43.395252" elapsed="0.233249"/>
+</kw>
+<kw name="Element Text Should Be" owner="AppiumLibrary">
+<msg time="2026-05-29T16:32:43.630706" level="INFO">Verifying element 'xpath=//android.widget.TextView[@text="Username and password do not match"]' contains exactly text 'Username and password do not match'.</msg>
+<msg time="2026-05-29T16:32:43.810813" level="INFO">xpath criteria: //android.widget.TextView[@text="Username and password do not match"]</msg>
+<arg>${MESSAGE}</arg>
+<arg>${ERROR_MESSAGE}</arg>
+<doc>Verifies that the element identified by ``locator`` contains the exact text ``expected``.</doc>
+<status status="PASS" start="2026-05-29T16:32:43.629800" elapsed="0.181285"/>
+</kw>
+<arg>${ERROR_MESSAGE}</arg>
+<status status="PASS" start="2026-05-29T16:32:43.392863" elapsed="0.418494"/>
+</kw>
+<kw name="Close Application" owner="AppiumLibrary">
+<doc>Closes the current application and the webdriver session.</doc>
+<status status="PASS" start="2026-05-29T16:32:43.811811" elapsed="0.687696"/>
+</kw>
+<doc>Verify unsuccessful login with incorrect username and correct password.</doc>
+<status status="PASS" start="2026-05-29T16:32:17.593174" elapsed="26.906776"/>
+</test>
+<test id="s1-s1-s1-s1-t2" name="Login Fail With Invalid Password" line="33">
+<kw name="Launch Mighty Audio App" owner="BaseScreen">
+<kw name="Open Application" owner="AppiumLibrary">
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=${PLATFORM}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>appPackage=${PACKAGE}</arg>
+<arg>appActivity=${ACTIVITY}</arg>
+<arg>automationName=UiAutomator2</arg>
+<arg>noReset=true</arg>
+<arg>fullReset=false</arg>
+<arg>forceAppLaunch=true</arg>
+<arg>appWaitActivity=com.mightyaudio.*</arg>
+<doc>Opens a new application to the given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.19/guides/caps/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | No     | alias             |</doc>
+<status status="PASS" start="2026-05-29T16:32:44.512236" elapsed="4.192076"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2026-05-29T16:32:49.387398" level="INFO">xpath criteria: //*</msg>
+<arg>xpath=//*</arg>
+<arg>timeout=15s</arg>
+<doc>Waits until the element specified by the ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-05-29T16:32:48.704810" elapsed="0.682879"/>
+</kw>
+<status status="PASS" start="2026-05-29T16:32:44.511699" elapsed="4.876237"/>
+</kw>
+<kw name="Tap on Arrow button on Onboarding page" owner="LoginScreen_Android">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2026-05-29T16:32:49.390179" level="INFO">Clicking element 'xpath=//qu0/android.view.View/android.view.View/android.view.View/android.view.View'.</msg>
+<msg time="2026-05-29T16:32:50.086771" level="INFO">xpath criteria: //qu0/android.view.View/android.view.View/android.view.View/android.view.View</msg>
+<arg>${ONBOARDING_ARROW_BUTTON}</arg>
+<doc>Clicks the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-29T16:32:49.389379" elapsed="0.697684"/>
+</kw>
+<status status="PASS" start="2026-05-29T16:32:49.388539" elapsed="0.698772"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-29T16:32:52.090350" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-29T16:32:50.087801" elapsed="2.003095"/>
+</kw>
+<kw name="Tap on Arrow button on Plug in Mighty page" owner="LoginScreen_Android">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2026-05-29T16:32:52.093297" level="INFO">Clicking element 'xpath=//qu0/android.view.View/android.view.View/android.view.View/android.view.View[1]/android.view.View[1]/android.view.View'.</msg>
+<msg time="2026-05-29T16:32:52.255221" level="INFO">xpath criteria: //qu0/android.view.View/android.view.View/android.view.View/android.view.View[1]/android.view.View[1]/android.view.View</msg>
+<arg>${PLUGIN_ARROW_BUTTON}</arg>
+<doc>Clicks the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-29T16:32:52.092547" elapsed="0.162976"/>
+</kw>
+<status status="PASS" start="2026-05-29T16:32:52.091708" elapsed="0.164064"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-29T16:32:54.257967" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-29T16:32:52.256228" elapsed="2.002323"/>
+</kw>
+<kw name="Is in Sign in page" owner="LoginScreen_Android">
+<kw name="Page Should Contain Text" owner="AppiumLibrary">
+<msg time="2026-05-29T16:32:54.421193" level="INFO">Current page contains text 'Sign in to your Mighty Account'.</msg>
+<arg>${SIGNIN_TITLE}</arg>
+<doc>Verifies that the current page contains ``text``.</doc>
+<status status="PASS" start="2026-05-29T16:32:54.260360" elapsed="0.161103"/>
+</kw>
+<status status="PASS" start="2026-05-29T16:32:54.259532" elapsed="0.162146"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-29T16:32:56.423876" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-29T16:32:54.422085" elapsed="2.002375"/>
+</kw>
+<kw name="Input Username" owner="LoginScreen_Android">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2026-05-29T16:32:56.426833" level="INFO">Clicking element 'xpath=//android.widget.ScrollView/android.widget.EditText[1]'.</msg>
+<msg time="2026-05-29T16:32:56.641442" level="INFO">xpath criteria: //android.widget.ScrollView/android.widget.EditText[1]</msg>
+<arg>${USERNAME_FIELD}</arg>
+<doc>Clicks the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-29T16:32:56.426234" elapsed="0.215507"/>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2026-05-29T16:32:56.643074" level="INFO">Typing text 'plnvy.27997' into text field 'xpath=//android.widget.ScrollView/android.widget.EditText[1]'</msg>
+<msg time="2026-05-29T16:32:57.732184" level="INFO">xpath criteria: //android.widget.ScrollView/android.widget.EditText[1]</msg>
+<arg>${USERNAME_FIELD}</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-29T16:32:56.642062" elapsed="1.090496"/>
+</kw>
+<arg>${VALID_USERNAME}</arg>
+<status status="PASS" start="2026-05-29T16:32:56.425423" elapsed="1.307450"/>
+</kw>
+<kw name="Input Password" owner="LoginScreen_Android">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2026-05-29T16:32:57.809016" level="INFO">xpath criteria: //android.widget.ScrollView/android.widget.EditText[2]</msg>
+<arg>${PASSWORD_FIELD}</arg>
+<arg>timeout=5s</arg>
+<doc>Waits until the element specified by the ``locator`` is visible.</doc>
+<status status="PASS" start="2026-05-29T16:32:57.734423" elapsed="0.074958"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2026-05-29T16:32:57.810866" level="INFO">Clicking element 'xpath=//android.widget.ScrollView/android.widget.EditText[2]'.</msg>
+<msg time="2026-05-29T16:32:57.907687" level="INFO">xpath criteria: //android.widget.ScrollView/android.widget.EditText[2]</msg>
+<arg>${PASSWORD_FIELD}</arg>
+<doc>Clicks the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-29T16:32:57.809819" elapsed="0.098060"/>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2026-05-29T16:32:57.908560" level="INFO">Typing text 'mighty@1' into text field 'xpath=//android.widget.ScrollView/android.widget.EditText[2]'</msg>
+<msg time="2026-05-29T16:32:58.575853" level="INFO">xpath criteria: //android.widget.ScrollView/android.widget.EditText[2]</msg>
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-29T16:32:57.908082" elapsed="0.668119"/>
+</kw>
+<arg>${INVALID_PASSWORD}</arg>
+<status status="PASS" start="2026-05-29T16:32:57.733561" elapsed="0.842899"/>
+</kw>
+<kw name="Tap on Unhide button" owner="LoginScreen_Android">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2026-05-29T16:32:58.578722" level="INFO">Clicking element 'xpath=//android.widget.ScrollView/android.widget.EditText[2]/android.view.View/android.view.View[2]'.</msg>
+<msg time="2026-05-29T16:32:58.725991" level="INFO">xpath criteria: //android.widget.ScrollView/android.widget.EditText[2]/android.view.View/android.view.View[2]</msg>
+<arg>${UNHIDE_BUTTON}</arg>
+<doc>Clicks the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-29T16:32:58.577889" elapsed="0.148400"/>
+</kw>
+<status status="PASS" start="2026-05-29T16:32:58.577205" elapsed="0.149318"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-29T16:33:03.728260" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-29T16:32:58.727143" elapsed="5.001695"/>
+</kw>
+<kw name="Tap on Sign in button" owner="LoginScreen_Android">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2026-05-29T16:33:03.935349" level="INFO">xpath criteria: //android.widget.ScrollView/android.view.View[1]/android.widget.Button</msg>
+<arg>${SIGNIN_BUTTON}</arg>
+<arg>timeout=5s</arg>
+<doc>Waits until the element specified by the ``locator`` is visible.</doc>
+<status status="PASS" start="2026-05-29T16:33:03.730450" elapsed="0.205339"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2026-05-29T16:33:03.937641" level="INFO">Clicking element 'xpath=//android.widget.ScrollView/android.view.View[1]/android.widget.Button'.</msg>
+<msg time="2026-05-29T16:33:05.010912" level="INFO">xpath criteria: //android.widget.ScrollView/android.view.View[1]/android.widget.Button</msg>
+<arg>${SIGNIN_BUTTON}</arg>
+<doc>Clicks the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-29T16:33:03.936293" elapsed="1.074937"/>
+</kw>
+<status status="PASS" start="2026-05-29T16:33:03.729738" elapsed="1.281778"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-29T16:33:10.012991" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-29T16:33:05.012033" elapsed="5.001579"/>
+</kw>
+<kw name="Verify Error Message Displayed" owner="LoginScreen_Android">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2026-05-29T16:33:10.219635" level="INFO">xpath criteria: //android.widget.TextView[@text="Username and password do not match"]</msg>
+<arg>${MESSAGE}</arg>
+<arg>timeout=5s</arg>
+<doc>Waits until the element specified by the ``locator`` is visible.</doc>
+<status status="PASS" start="2026-05-29T16:33:10.015405" elapsed="0.204560"/>
+</kw>
+<kw name="Element Text Should Be" owner="AppiumLibrary">
+<msg time="2026-05-29T16:33:10.221190" level="INFO">Verifying element 'xpath=//android.widget.TextView[@text="Username and password do not match"]' contains exactly text 'Username and password do not match'.</msg>
+<msg time="2026-05-29T16:33:10.400581" level="INFO">xpath criteria: //android.widget.TextView[@text="Username and password do not match"]</msg>
+<arg>${MESSAGE}</arg>
+<arg>${ERROR_MESSAGE}</arg>
+<doc>Verifies that the element identified by ``locator`` contains the exact text ``expected``.</doc>
+<status status="PASS" start="2026-05-29T16:33:10.220347" elapsed="0.180879"/>
+</kw>
+<arg>${ERROR_MESSAGE}</arg>
+<status status="PASS" start="2026-05-29T16:33:10.014545" elapsed="0.387219"/>
+</kw>
+<kw name="Close Application" owner="AppiumLibrary">
+<doc>Closes the current application and the webdriver session.</doc>
+<status status="PASS" start="2026-05-29T16:33:10.402541" elapsed="0.691488"/>
+</kw>
+<doc>Verify unsuccessful login with correct username and incorrect password.</doc>
+<status status="PASS" start="2026-05-29T16:32:44.506035" elapsed="26.588434"/>
+</test>
+<test id="s1-s1-s1-s1-t3" name="Cannot Login Without Input Credentials" line="51">
+<kw name="Launch Mighty Audio App" owner="BaseScreen">
+<kw name="Open Application" owner="AppiumLibrary">
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=${PLATFORM}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>appPackage=${PACKAGE}</arg>
+<arg>appActivity=${ACTIVITY}</arg>
+<arg>automationName=UiAutomator2</arg>
+<arg>noReset=true</arg>
+<arg>fullReset=false</arg>
+<arg>forceAppLaunch=true</arg>
+<arg>appWaitActivity=com.mightyaudio.*</arg>
+<doc>Opens a new application to the given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.19/guides/caps/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | No     | alias             |</doc>
+<status status="PASS" start="2026-05-29T16:33:11.105693" elapsed="4.242927"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2026-05-29T16:33:16.132412" level="INFO">xpath criteria: //*</msg>
+<arg>xpath=//*</arg>
+<arg>timeout=15s</arg>
+<doc>Waits until the element specified by the ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-05-29T16:33:15.348976" elapsed="0.783721"/>
+</kw>
+<status status="PASS" start="2026-05-29T16:33:11.105004" elapsed="5.027920"/>
+</kw>
+<kw name="Tap on Arrow button on Onboarding page" owner="LoginScreen_Android">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2026-05-29T16:33:16.134721" level="INFO">Clicking element 'xpath=//qu0/android.view.View/android.view.View/android.view.View/android.view.View'.</msg>
+<msg time="2026-05-29T16:33:16.786055" level="INFO">xpath criteria: //qu0/android.view.View/android.view.View/android.view.View/android.view.View</msg>
+<arg>${ONBOARDING_ARROW_BUTTON}</arg>
+<doc>Clicks the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-29T16:33:16.134049" elapsed="0.652515"/>
+</kw>
+<status status="PASS" start="2026-05-29T16:33:16.133452" elapsed="0.653476"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-29T16:33:18.789645" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-29T16:33:16.787538" elapsed="2.003028"/>
+</kw>
+<kw name="Tap on Arrow button on Plug in Mighty page" owner="LoginScreen_Android">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2026-05-29T16:33:18.794918" level="INFO">Clicking element 'xpath=//qu0/android.view.View/android.view.View/android.view.View/android.view.View[1]/android.view.View[1]/android.view.View'.</msg>
+<msg time="2026-05-29T16:33:18.979264" level="INFO">xpath criteria: //qu0/android.view.View/android.view.View/android.view.View/android.view.View[1]/android.view.View[1]/android.view.View</msg>
+<arg>${PLUGIN_ARROW_BUTTON}</arg>
+<doc>Clicks the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-29T16:33:18.794309" elapsed="0.185253"/>
+</kw>
+<status status="PASS" start="2026-05-29T16:33:18.792256" elapsed="0.187541"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-29T16:33:20.981391" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-29T16:33:18.980249" elapsed="2.001912"/>
+</kw>
+<kw name="Is in Sign in page" owner="LoginScreen_Android">
+<kw name="Page Should Contain Text" owner="AppiumLibrary">
+<msg time="2026-05-29T16:33:21.147867" level="INFO">Current page contains text 'Sign in to your Mighty Account'.</msg>
+<arg>${SIGNIN_TITLE}</arg>
+<doc>Verifies that the current page contains ``text``.</doc>
+<status status="PASS" start="2026-05-29T16:33:20.984091" elapsed="0.164071"/>
+</kw>
+<status status="PASS" start="2026-05-29T16:33:20.983002" elapsed="0.165441"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-29T16:33:23.151928" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-29T16:33:21.149026" elapsed="2.003144"/>
+</kw>
+<kw name="Verify Sign in Button is not clickabled" owner="LoginScreen_Android">
+<kw name="Element Attribute Should Match" owner="AppiumLibrary">
+<msg time="2026-05-29T16:33:23.326349" level="INFO">Element 'xpath=//android.widget.ScrollView/android.view.View[1]/android.widget.Button' attribute 'clickable' is 'False' </msg>
+<msg time="2026-05-29T16:33:23.326578" level="INFO">xpath criteria: //android.widget.ScrollView/android.view.View[1]/android.widget.Button</msg>
+<arg>${SIGNIN_BUTTON}</arg>
+<arg>clickable</arg>
+<arg>False</arg>
+<doc>Verifies that an attribute of an element matches the expected criteria.</doc>
+<status status="PASS" start="2026-05-29T16:33:23.153154" elapsed="0.173570"/>
+</kw>
+<status status="PASS" start="2026-05-29T16:33:23.152629" elapsed="0.174304"/>
+</kw>
+<kw name="Close Application" owner="AppiumLibrary">
+<doc>Closes the current application and the webdriver session.</doc>
+<status status="PASS" start="2026-05-29T16:33:23.327373" elapsed="0.679781"/>
+</kw>
+<doc>Verify validation when leaving fields blank.</doc>
+<status status="PASS" start="2026-05-29T16:33:11.099736" elapsed="12.907983"/>
+</test>
+<test id="s1-s1-s1-s1-t4" name="Login Successfully With Valid Credentials" line="63">
+<kw name="Launch Mighty Audio App" owner="BaseScreen">
+<kw name="Open Application" owner="AppiumLibrary">
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=${PLATFORM}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>appPackage=${PACKAGE}</arg>
+<arg>appActivity=${ACTIVITY}</arg>
+<arg>automationName=UiAutomator2</arg>
+<arg>noReset=true</arg>
+<arg>fullReset=false</arg>
+<arg>forceAppLaunch=true</arg>
+<arg>appWaitActivity=com.mightyaudio.*</arg>
+<doc>Opens a new application to the given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.19/guides/caps/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | No     | alias             |</doc>
+<status status="PASS" start="2026-05-29T16:33:24.024309" elapsed="4.199683"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2026-05-29T16:33:28.983900" level="INFO">xpath criteria: //*</msg>
+<arg>xpath=//*</arg>
+<arg>timeout=15s</arg>
+<doc>Waits until the element specified by the ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-05-29T16:33:28.224626" elapsed="0.759685"/>
+</kw>
+<status status="PASS" start="2026-05-29T16:33:24.023695" elapsed="4.961008"/>
+</kw>
+<kw name="Tap on Arrow button on Onboarding page" owner="LoginScreen_Android">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2026-05-29T16:33:28.986858" level="INFO">Clicking element 'xpath=//qu0/android.view.View/android.view.View/android.view.View/android.view.View'.</msg>
+<msg time="2026-05-29T16:33:29.680400" level="INFO">xpath criteria: //qu0/android.view.View/android.view.View/android.view.View/android.view.View</msg>
+<arg>${ONBOARDING_ARROW_BUTTON}</arg>
+<doc>Clicks the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-29T16:33:28.986255" elapsed="0.694439"/>
+</kw>
+<status status="PASS" start="2026-05-29T16:33:28.985519" elapsed="0.695428"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-29T16:33:31.683680" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-29T16:33:29.681384" elapsed="2.003288"/>
+</kw>
+<kw name="Tap on Arrow button on Plug in Mighty page" owner="LoginScreen_Android">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2026-05-29T16:33:31.686124" level="INFO">Clicking element 'xpath=//qu0/android.view.View/android.view.View/android.view.View/android.view.View[1]/android.view.View[1]/android.view.View'.</msg>
+<msg time="2026-05-29T16:33:31.891626" level="INFO">xpath criteria: //qu0/android.view.View/android.view.View/android.view.View/android.view.View[1]/android.view.View[1]/android.view.View</msg>
+<arg>${PLUGIN_ARROW_BUTTON}</arg>
+<doc>Clicks the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-29T16:33:31.685681" elapsed="0.206609"/>
+</kw>
+<status status="PASS" start="2026-05-29T16:33:31.685138" elapsed="0.207945"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-29T16:33:33.896092" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-29T16:33:31.894968" elapsed="2.001527"/>
+</kw>
+<kw name="Is in Sign in page" owner="LoginScreen_Android">
+<kw name="Page Should Contain Text" owner="AppiumLibrary">
+<msg time="2026-05-29T16:33:34.066597" level="INFO">Current page contains text 'Sign in to your Mighty Account'.</msg>
+<arg>${SIGNIN_TITLE}</arg>
+<doc>Verifies that the current page contains ``text``.</doc>
+<status status="PASS" start="2026-05-29T16:33:33.897690" elapsed="0.169211"/>
+</kw>
+<status status="PASS" start="2026-05-29T16:33:33.897143" elapsed="0.169981"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-29T16:33:36.069858" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-29T16:33:34.067585" elapsed="2.002713"/>
+</kw>
+<kw name="Input Username" owner="LoginScreen_Android">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2026-05-29T16:33:36.072340" level="INFO">Clicking element 'xpath=//android.widget.ScrollView/android.widget.EditText[1]'.</msg>
+<msg time="2026-05-29T16:33:36.318976" level="INFO">xpath criteria: //android.widget.ScrollView/android.widget.EditText[1]</msg>
+<arg>${USERNAME_FIELD}</arg>
+<doc>Clicks the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-29T16:33:36.071861" elapsed="0.247586"/>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2026-05-29T16:33:36.320928" level="INFO">Typing text 'plnvy.27997' into text field 'xpath=//android.widget.ScrollView/android.widget.EditText[1]'</msg>
+<msg time="2026-05-29T16:33:37.405374" level="INFO">xpath criteria: //android.widget.ScrollView/android.widget.EditText[1]</msg>
+<arg>${USERNAME_FIELD}</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-29T16:33:36.319888" elapsed="1.085863"/>
+</kw>
+<arg>${VALID_USERNAME}</arg>
+<status status="PASS" start="2026-05-29T16:33:36.071086" elapsed="1.335039"/>
+</kw>
+<kw name="Input Password" owner="LoginScreen_Android">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2026-05-29T16:33:37.487751" level="INFO">xpath criteria: //android.widget.ScrollView/android.widget.EditText[2]</msg>
+<arg>${PASSWORD_FIELD}</arg>
+<arg>timeout=5s</arg>
+<doc>Waits until the element specified by the ``locator`` is visible.</doc>
+<status status="PASS" start="2026-05-29T16:33:37.407918" elapsed="0.080215"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2026-05-29T16:33:37.490001" level="INFO">Clicking element 'xpath=//android.widget.ScrollView/android.widget.EditText[2]'.</msg>
+<msg time="2026-05-29T16:33:37.591179" level="INFO">xpath criteria: //android.widget.ScrollView/android.widget.EditText[2]</msg>
+<arg>${PASSWORD_FIELD}</arg>
+<doc>Clicks the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-29T16:33:37.488558" elapsed="0.103215"/>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2026-05-29T16:33:37.595411" level="INFO">Typing text 'Mighty@1' into text field 'xpath=//android.widget.ScrollView/android.widget.EditText[2]'</msg>
+<msg time="2026-05-29T16:33:38.322200" level="INFO">xpath criteria: //android.widget.ScrollView/android.widget.EditText[2]</msg>
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-29T16:33:37.592402" elapsed="0.730403"/>
+</kw>
+<arg>${VALID_PASSWORD}</arg>
+<status status="PASS" start="2026-05-29T16:33:37.406898" elapsed="0.916405"/>
+</kw>
+<kw name="Tap on Unhide button" owner="LoginScreen_Android">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2026-05-29T16:33:38.326402" level="INFO">Clicking element 'xpath=//android.widget.ScrollView/android.widget.EditText[2]/android.view.View/android.view.View[2]'.</msg>
+<msg time="2026-05-29T16:33:38.480143" level="INFO">xpath criteria: //android.widget.ScrollView/android.widget.EditText[2]/android.view.View/android.view.View[2]</msg>
+<arg>${UNHIDE_BUTTON}</arg>
+<doc>Clicks the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-29T16:33:38.325443" elapsed="0.155032"/>
+</kw>
+<status status="PASS" start="2026-05-29T16:33:38.324353" elapsed="0.156408"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-29T16:33:43.482642" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-29T16:33:38.481340" elapsed="5.001934"/>
+</kw>
+<kw name="Tap on Sign in button" owner="LoginScreen_Android">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2026-05-29T16:33:43.683008" level="INFO">xpath criteria: //android.widget.ScrollView/android.view.View[1]/android.widget.Button</msg>
+<arg>${SIGNIN_BUTTON}</arg>
+<arg>timeout=5s</arg>
+<doc>Waits until the element specified by the ``locator`` is visible.</doc>
+<status status="PASS" start="2026-05-29T16:33:43.484862" elapsed="0.198509"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2026-05-29T16:33:43.684385" level="INFO">Clicking element 'xpath=//android.widget.ScrollView/android.view.View[1]/android.widget.Button'.</msg>
+<msg time="2026-05-29T16:33:44.748473" level="INFO">xpath criteria: //android.widget.ScrollView/android.view.View[1]/android.widget.Button</msg>
+<arg>${SIGNIN_BUTTON}</arg>
+<doc>Clicks the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-29T16:33:43.683692" elapsed="1.065083"/>
+</kw>
+<status status="PASS" start="2026-05-29T16:33:43.484185" elapsed="1.264814"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-29T16:33:49.750243" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-29T16:33:44.749452" elapsed="5.001323"/>
+</kw>
+<kw name="Verify Login Success" owner="LoginScreen_Android">
+<kw name="Page Should Contain Text" owner="AppiumLibrary">
+<msg time="2026-05-29T16:33:49.834259" level="INFO">Current page contains text 'Connect to a streaming service'.</msg>
+<arg>${MUSICSERVICE_TITLE}</arg>
+<doc>Verifies that the current page contains ``text``.</doc>
+<status status="PASS" start="2026-05-29T16:33:49.752302" elapsed="0.082270"/>
+</kw>
+<status status="PASS" start="2026-05-29T16:33:49.751482" elapsed="0.083329"/>
+</kw>
+<kw name="Close Application" owner="AppiumLibrary">
+<doc>Closes the current application and the webdriver session.</doc>
+<status status="PASS" start="2026-05-29T16:33:49.835363" elapsed="0.662954"/>
+</kw>
+<doc>Verify successful login with correct username and password.</doc>
+<status status="PASS" start="2026-05-29T16:33:24.013739" elapsed="26.484993"/>
+</test>
+<status status="PASS" start="2026-05-29T16:32:17.498485" elapsed="93.005600"/>
+</suite>
+<status status="PASS" start="2026-05-29T16:32:17.492166" elapsed="93.016900"/>
+</suite>
+<status status="PASS" start="2026-05-29T16:32:17.490863" elapsed="93.031632"/>
+</suite>
+<status status="PASS" start="2026-05-29T16:32:17.474864" elapsed="93.050321"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Mighty-Mobile-Automation" id="s1" pass="4" fail="0" skip="0">Mighty-Mobile-Automation</stat>
+<stat name="Tests" id="s1-s1" pass="4" fail="0" skip="0">Mighty-Mobile-Automation.Tests</stat>
+<stat name="Android" id="s1-s1-s1" pass="4" fail="0" skip="0">Mighty-Mobile-Automation.Tests.Android</stat>
+<stat name="Test Login Android" id="s1-s1-s1-s1" pass="4" fail="0" skip="0">Mighty-Mobile-Automation.Tests.Android.Test Login Android</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

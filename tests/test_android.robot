@@ -4,7 +4,7 @@ Library           AppiumLibrary
 *** Variables ***
 ${REMOTE_URL}     http://127.0.0.1:4723
 ${PLATFORM}       Android
-${DEVICE_NAME}    575a96d        # Your device ID from adb devices
+${DEVICE_NAME}    R7AL206HD0D        # Your device ID from adb devices
 
 *** Test Cases ***
 Open Settings On Real Device
